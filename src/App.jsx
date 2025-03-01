@@ -15,10 +15,7 @@ function App() {
     return contador;
   }
   return(<>
-    <Header />
     <Menu />
-    <Home />
-    <Footer />
   </>);
 }
 
