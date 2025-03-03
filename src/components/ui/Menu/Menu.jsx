@@ -1,5 +1,4 @@
-import {NavLink} from "react-router";
-import "./Menu.scss";
+import { NavLink } from "react-router";
 
 function Menu(){
     return(<>
@@ -10,5 +9,4 @@ function Menu(){
     </nav>
     </>);
 }
-
 export default Menu;

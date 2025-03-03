@@ -3,9 +3,8 @@ import { useState, useEffect } from 'react'
 //import viteLogo from '/vite.svg'
 //import './App.css'
 import Home from './components/pages/Home/Home.jsx';
-import Header from "./components/ui/Header/Header";
-import Menu from "./components/ui/Menu/Menu";
-import Footer from "./components/ui/Footer/Footer";
+import Menu from './components/ui/Menu/Router.jsx';
+import './css/variables.scss';
 import './css/generales.scss';
 
 function App() {
