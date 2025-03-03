@@ -1,4 +1,8 @@
 import "./Sponsor.scss";
+import pragma from "../../../assets/img/pragma.png";
+import upb_tec from "../../../assets/img/upb_tec_logo.png";
+import upb_logo from "../../../assets/img/logo_upb.png";
+
 function Footer() {
     return (
         <footer id="sponsors">
@@ -7,13 +11,13 @@ function Footer() {
         </h2>
         <div>
             <a className="enlace_sponsor" href="https://www.pragma.com.co/es/" target="_blank">
-                <img src="img/pragma.png" alt=""/>
+                <img src={pragma} alt=""/>
             </a>
             <a className="enlace_sponsor" href="https://www.upb.edu.co/es/programas-tecnicos" target="_blank">
-                <img src="img/upb_tec_logo.png" alt="" />
+                <img src={upb_tec} alt="" />
             </a>
             <a className="enlace_sponsor" href="https://www.upb.edu.co" target="_blank">
-                <img src="img/logo_upb.png" alt=""/>
+                <img src={upb_logo} alt=""/>
             </a>
             <br />
             <a className="enlace_sponsor autor" href="http://www.xacarana.com" target="_blank">

@@ -6,21 +6,21 @@
     background: var(--color-fondo-menu);
     border-radius: 20px;
 }
-.active{
-    background: white;
+.menu a{
     display: inline-block;
     box-sizing: border-box;
-    height: 30px;
     line-height: 30px;
+    height: 30px;
     width: 8vw;
-    text-align: center;
-    border-radius: 6px;
-}
-.menu a{
     color:var(--color-enlaces_menu);
     text-decoration: none;
     margin-right: 15px;
     font-weight: bold;
+}
+.active{
+    background: white;
+    text-align: center;
+    border-radius: 6px;
 }
 .menu a:hover{
     text-decoration: underline;
