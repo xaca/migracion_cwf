@@ -1,0 +1,74 @@
+/*Celular*/
+@media (max-width: 420px)  {
+    .torneos{
+        width: 300px;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .anuncio{
+        width: 300px;
+    }
+    li {
+        height: auto;
+        padding: 2px 10px;
+        line-height: 30px;
+    }
+    li > span {
+        display: block;
+    }
+    .speaker {
+        font-weight: 500;
+        display: block;
+    }
+    #speakers section{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .tarjeta_speaker{
+        margin-bottom: 20px;
+    }
+    .enlace_sponsor{
+        height: 20%;
+    }
+    .avatar{
+        margin: 0 auto;
+    }
+    #sponsors img{
+        /*width: 100px;*/
+    }
+    .tarjeta_speaker{
+        width: 250px;
+        margin:10px auto;
+    }
+    .menu .seleccion{
+        width: 25vw;
+    }
+}
+/* Celuar Pro Max */
+@media (min-width: 421px) and (max-width:500px) {
+    .tarjeta_speaker{
+        width: 320px;
+        margin-bottom: 20px;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .descripcion{
+        text-align: left;
+    }
+    .avatar{
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .enlace_sponsor{
+        display: block;
+    }
+    #speakers section{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu .seleccion{
+        width: 20vw;
+    }
+}

@@ -1,7 +1,7 @@
+import "./Slider.scss";
 import { useEffect } from "react";
 import SliderConfig from "./SliderConfig.js";
 import { MdKeyboardArrowRight,MdKeyboardArrowLeft } from "react-icons/md";
-import "./Slider.scss";
 
 function Slider({id_slider}){
     
