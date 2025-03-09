@@ -8,11 +8,11 @@ function SocialMedia({ speaker }) {
     let logos = [linkedin_logo, instagram_logo, github_logo, website_logo];
     let handles = speaker.handles;
     return (
-        <div class="redes vertical_escritorio">
+        <div className="redes vertical_escritorio">
         {handles.map((handles, index) => {
             return (
-                <a class="enlace" href={handles.url} target="_blank">
-                    <img src={logo[handles.id]} width="16" />
+                <a className="enlace" href={handles.url} target="_blank">
+                    <img src={logos[handles.id]} width="16" />
                 </a>
             );
         })}
@@ -23,22 +23,25 @@ function SocialMedia({ speaker }) {
 function IsAlumni({speaker}){
     if(speaker.is_alumni){
         return (
-            <p class="egreso vertical_escritorio">Año de egreso<span class="fecha">{speaker.graduation_year}</span></p>
+            <p className="egreso vertical_escritorio">
+              Año de egreso
+              <span className="fecha">{speaker.graduation_year}</span>
+            </p>
         );
     }
     return null;
 }
 function Card({ speaker }) {
   return (
-    <div class="tarjeta_speaker">
-        <div class="avatar">
+    <div className="tarjeta_speaker">
+        <div className="avatar">
             <img src={speaker.avatar} alt="avatar" />
         </div>
-        <span class="nombre_tarjeta vertical_escritorio">
+        <span className="nombre_tarjeta vertical_escritorio">
         {speaker.name}
         </span>
         <IsAlumni speaker={speaker} />
-        <p class="descripcion vertical_escritorio"> 
+        <p className="descripcion vertical_escritorio"> 
           {speaker.description}
         </p>
         <SocialMedia speaker={speaker} />

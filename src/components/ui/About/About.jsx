@@ -8,7 +8,7 @@ function About(){
       <p>
         Es un espacio de integración y de networking de la comunidad, esperamos que disfruten lo que hemos preparado y agradecemos a todas las personas y empresas que nos apoyan con su tiempo.
       </p>
-      <span class="mensaje_importante">Espera proximamente más eventos</span>
+      <span className="mensaje_importante">Espera proximamente más eventos</span>
     </section>
     </>);
 }
