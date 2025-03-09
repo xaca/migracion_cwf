@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react'
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
 //import './App.css'
-import Home from './components/pages/Home/Home.jsx';
-import Menu from './components/ui/Menu/Router.jsx';
+import Router from './components/ui/Menu/Router.jsx';
 import './css/variables.scss';
 import './css/generales.scss';
 
@@ -18,7 +17,7 @@ function App() {
   }
   
   return(<>
-    <Menu />
+    <Router />
   </>);
 }
 
