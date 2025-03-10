@@ -79,15 +79,6 @@ div {
     font-size: 14px;
     letter-spacing: -.5px;
 }
-.avatar{
-    border:1px solid var(--color-terciario);
-    border-radius: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
-}
 .anuncio{
     text-align: left;
     margin:30px;
@@ -112,7 +103,11 @@ div {
 iframe .teQAzf{
     background-color: white;
 }
-  
+#about p, #register p{
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+}
   
 
   

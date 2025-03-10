@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route,NavLink } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router";
 import Deportes from "../../pages/Deportes/Deportes";
 import Home from "../../pages/Home/Home";
 import Cine from "../../pages/Cine/Cine";
-import "./Menu.scss";
+import InPersonEvent from "../../pages/Charlas/InPersonEvent";
 
 function Router(){
     return(<>
@@ -10,6 +10,7 @@ function Router(){
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="cine" element={<Cine />} />
+                <Route path="charlas" element={<InPersonEvent />} />
                 <Route path="deportes" element={<Deportes />} />
             </Routes>
         </BrowserRouter>

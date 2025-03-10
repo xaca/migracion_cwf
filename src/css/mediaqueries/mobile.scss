@@ -43,6 +43,12 @@
     .menu .seleccion{
         width: 25vw;
     }
+    .menu a {
+        display: block;
+        padding-left: 9px;
+        width: 22vw;
+        text-align: left;
+    }
 }
 /* Celuar Pro Max */
 @media (min-width: 421px) and (max-width:500px) {
@@ -70,5 +76,11 @@
     }
     .menu .seleccion{
         width: 20vw;
+    }
+    .menu a {
+        display: block;
+        padding-left: 9px;
+        width: 22vw;
+        text-align: left;
     }
 }

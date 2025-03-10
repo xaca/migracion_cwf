@@ -4,7 +4,7 @@ import SliderConfig from "./SliderConfig.js";
 import { MdKeyboardArrowRight,MdKeyboardArrowLeft } from "react-icons/md";
 
 function Slider({id_slider}){
-    
+
     useEffect(() => {
         new SliderConfig(document.getElementById(id_slider)); 
     },[""]);
@@ -28,7 +28,6 @@ function Slider({id_slider}){
                     <p>
                     Este semestre tendremos nuevas charlas, eventos especiales y actividades para toda la comunidad, no te las pierdas.
                     </p>
-                    
                 </section>
                 </li>
                 </a> 
@@ -36,9 +35,9 @@ function Slider({id_slider}){
                 <li className="carousel-item" id="banner_2">
                 <section className="contenedor_texto">
                     <h2>Cine Club 🍿</h2>
-                <p>
-                    Cada miércoles organizamos una salida al cine, si quieres unirte a nosotros, no dudes en contactarnos.
-                </p>
+                    <p>
+                        Cada miércoles organizamos una salida al cine, si quieres unirte a nosotros, no dudes en contactarnos.
+                    </p>
                 </section>
                 </li>
                 </a>
