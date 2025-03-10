@@ -1,12 +1,11 @@
 /*Escritorio*/
-@media (min-width: 811px){
+@media (min-width: 801px){
     .avatar{
 
     }
     .tarjeta_speaker{
         width: 850px;
         margin: 50px auto;
-
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr;
@@ -36,5 +35,11 @@
     }
     .egreso{
         width: 120px;
+    }
+    .separador{
+        display: none;
+    }
+    .menu .seleccion{
+        width: 12vw;
     }
 }

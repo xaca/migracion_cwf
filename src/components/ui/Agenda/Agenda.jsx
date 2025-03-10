@@ -6,29 +6,29 @@ function Agenda() {
     <h1>Agenda</h1>
     <ul>
       <li className="item" key={uuidv4()}>
-        <span>[17:30 - 18:00]</span> 
-        <span>Networking, participantes</span>
+        <span>[17:00 - 17:30]</span> 
+        <span>Llegada de participantes, espacio de networking</span>
+        <br />
       </li>
       <li className="item" key={uuidv4()}>
-        <span>[18:00 - 19:00]</span>
-        <span>Explorando Angular y React: ¿Cuál elegir?</span>
+        <span>[17:40 - 18:30]</span>
+        <span>Lightning talk - Aprendiendo, creciendo y liderando: Cómo construí mi propia carrera</span>
         <span className="speaker">
-          / Axel Williams Sotelo Grajales <br />
-          / Juan Felipe Franco Zuluaga
+          / Valeria Moreno Zapata
         </span>
       </li>
       <li className="item" key={uuidv4()}>
-        <span>[19:10 - 19:30]</span> 
-        <span>Conversatorio y preguntas</span> 
+        <span>[18:40 - 19:20]</span> 
+        <span>Podcast en vivo - Más allá del código:docencia y liderazgo</span> 
         <span className="speaker">
-          / Panel de invitados
+          / Cristina Gómez Santamaría / Valen Ariza Gómez / Laura López Bedoya 
         </span>
       </li>
       <li className="item" key={uuidv4()}>
-        <span>[19:40 - 20:30]</span> 
-        <span>Cierre temporada</span> 
+        <span>[19:30 - 20:00]</span> 
+        <span>Actividad de cierre</span> 
         <span className="speaker">
-          / Rifas y regalos
+          / Valiente
         </span>
       </li>
     </ul>

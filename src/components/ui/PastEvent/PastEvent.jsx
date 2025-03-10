@@ -2,7 +2,7 @@ function PastEvent(){
     return (<>
       <section>
       <h2>Eventos anteriores</h2>
-      <ul class="lista_generica">
+      <ul className="lista_generica">
         <li>
           🌱<a href="archivo/01/" target="_blank">CWF - CONF (el inicio)</a>
         </li>

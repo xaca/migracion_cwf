@@ -2,22 +2,24 @@ import linkedin_logo from "../../../../assets/img/linkedin.svg";
 import instagram_logo from "../../../../assets/img/instagram.svg";
 import github_logo from "../../../../assets/img/github.svg";
 import website_logo from "../../../../assets/img/website.svg";
+import { v4 as uuidv4 } from 'uuid';
 
 //TODO: Explicar que un componente puede tener componentes relacionados
-function SocialMedia({ speaker }) {
+function Handles({ speaker })
+{
     let logos = [linkedin_logo, instagram_logo, github_logo, website_logo];
     let handles = speaker.handles;
-    return (
-        <div className="redes vertical_escritorio">
+    return (<>
+      <div className="redes vertical_escritorio">
         {handles.map((handles, index) => {
             return (
-                <a className="enlace" href={handles.url} target="_blank">
+                <a className="enlace" key={uuidv4()} href={handles.url} target="_blank">
                     <img src={logos[handles.id]} width="16" />
                 </a>  
             );
         })}
       </div>
-    );
+      </>);
 }
 //TODO:Explicar que un componente puede retornar null para indicar empty
 function IsAlumni({speaker}){
@@ -38,7 +40,7 @@ function Card({ speaker }) {
   return (
     <div className="tarjeta_speaker">
         <div className="avatar" style={style}>
-        </div><br />
+        </div><br className="separador" />
         <span className="nombre_tarjeta vertical_escritorio">
         {speaker.name}
         </span>
@@ -46,8 +48,8 @@ function Card({ speaker }) {
         <p className="descripcion vertical_escritorio"> 
           {speaker.description}
         </p>
-        <SocialMedia speaker={speaker} />
-      </div>
+        <Handles speaker={speaker} />
+    </div>
   );
 }
 export default Card;

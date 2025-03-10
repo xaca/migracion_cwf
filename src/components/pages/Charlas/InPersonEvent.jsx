@@ -5,6 +5,8 @@ import Speaker from "../../ui/Speaker/Speaker";
 import Header from "../../ui/Header/Header";
 import Menu from "../../ui/Menu/Menu";
 import Footer from "../../ui/Footer/Footer";
+import Info from "../../ui/Info/Info";
+import PastEvent from "../../ui/PastEvent/PastEvent";
 import logo_evento from "../../../assets/img/logo_evento_datasoul.svg";
 import avatar_speaker_1 from "../../../assets/img/01_speaker.png";
 import avatar_speaker_2 from "../../../assets/img/02_speaker.png";
@@ -25,6 +27,11 @@ function InPersonEvent(){
         <Header logoPersonalizado={logo_evento} />
         <Menu />
         <About />
+        <Info info={{
+            date: `Miércoles 12 de marzo de 2025`,
+            venue: `Auditorio Ignacio Viera (Arquidiseño)`,
+            time: `17:00 - 20:00`
+        }} />
         <Register />
         <Agenda />
         <section id="speakers">
@@ -73,6 +80,7 @@ function InPersonEvent(){
             }} />
         </section>
         </section> 
+        <PastEvent />
         <Footer />
     </>);
 }

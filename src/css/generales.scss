@@ -72,6 +72,8 @@ div {
 }
 .fecha{
     color: var(--color-texto);
+}
+.fecha span{
     font-weight: 600;
 }
 .descripcion{
@@ -103,7 +105,7 @@ div {
 iframe .teQAzf{
     background-color: white;
 }
-#about p, #register p{
+#about p, #register p, #info p{
     text-align: left;
     margin: 0 auto;
     width: 80%;
