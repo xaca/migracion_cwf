@@ -5,6 +5,12 @@ import Speaker from "../../ui/Speaker/Speaker";
 import Header from "../../ui/Header/Header";
 import Menu from "../../ui/Menu/Menu";
 import Footer from "../../ui/Footer/Footer";
+import logo_evento from "../../../assets/img/logo_evento_datasoul.svg";
+import avatar_speaker_1 from "../../../assets/img/01_speaker.png";
+import avatar_speaker_2 from "../../../assets/img/02_speaker.png";
+import avatar_speaker_3 from "../../../assets/img/03_speaker.png";
+import avatar_speaker_4 from "../../../assets/img/04_speaker.png";
+
 import "../../../css/speakers.scss";
 import "../../../css/lista.scss";
 /*
@@ -16,7 +22,7 @@ Identificadores imagenes redes:
 */
 function InPersonEvent(){
     return (<>
-        <Header />
+        <Header logoPersonalizado={logo_evento} />
         <Menu />
         <About />
         <Register />
@@ -26,7 +32,7 @@ function InPersonEvent(){
         <section>
             <Speaker speaker={{
                 name:"Valen Ariza Gómez",
-                avatar:"",
+                avatar:avatar_speaker_2,
                 handles:[
                     {id:0, url:"https://www.linkedin.com/in/valearizag/"},
                     {id:1, url:"https://www.instagram.com/valearizag/"}
@@ -37,7 +43,7 @@ function InPersonEvent(){
             }} />
             <Speaker speaker={{
                 name:"Laura López Bedoya",
-                avatar:"",
+                avatar:avatar_speaker_4,
                 handles:[
                     {id:0, url:"https://www.linkedin.com/in/lauralpezb/"},
                     {id:1, url:"https://www.instagram.com/lauralpezb/"}
@@ -48,7 +54,7 @@ function InPersonEvent(){
             }} />
             <Speaker speaker={{
                 name:"Cristina Gómez Santamaría",
-                avatar:"",
+                avatar:avatar_speaker_3,
                 handles:[
                     {id:0, url:"https://www.linkedin.com/in/cristina-gomez-santamar"},
                 ],
@@ -57,7 +63,7 @@ function InPersonEvent(){
             }} />
             <Speaker speaker={{
                 name:"Valeria Moreno Zapata",
-                avatar:"",
+                avatar:avatar_speaker_1,
                 handles:[
                     {id:0, url:"https://www.linkedin.com/in/valeria-moreno-zapata-0249b5136/"},
                 ],

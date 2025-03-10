@@ -4,7 +4,7 @@ function Register(){
         <h1>Registro</h1>
         <p>
             La participación en el evento es gratuita, es un evento público. Sin embargo pedimos el favor de realizar el registro para saber cuantas personas esperamos. 
-            <br /><br />
+            <br /><br /><br />
             <a href="http://bit.ly/codingupb" id="btn_registro">Registro</a>
         </p>
         </section>

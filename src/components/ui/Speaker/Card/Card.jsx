@@ -13,7 +13,7 @@ function SocialMedia({ speaker }) {
             return (
                 <a className="enlace" href={handles.url} target="_blank">
                     <img src={logos[handles.id]} width="16" />
-                </a>
+                </a>  
             );
         })}
       </div>
@@ -24,7 +24,7 @@ function IsAlumni({speaker}){
     if(speaker.is_alumni){
         return (
             <p className="egreso vertical_escritorio">
-              Año de egreso
+              Año de egreso <br />
               <span className="fecha">{speaker.graduation_year}</span>
             </p>
         );
@@ -32,11 +32,13 @@ function IsAlumni({speaker}){
     return null;
 }
 function Card({ speaker }) {
+  const style = {
+    backgroundImage: `url(${speaker.avatar})`
+  };
   return (
     <div className="tarjeta_speaker">
-        <div className="avatar">
-            <img src={speaker.avatar} alt="avatar" />
-        </div>
+        <div className="avatar" style={style}>
+        </div><br />
         <span className="nombre_tarjeta vertical_escritorio">
         {speaker.name}
         </span>
