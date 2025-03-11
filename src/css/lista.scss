@@ -16,6 +16,13 @@ ul {
     margin-left: 20px;
     display: block;
 }
+.item span {
+    font-size: 18px;
+    font-weight: 500;
+}
+.lista_generica{
+    margin-left: 40px;
+}
 .item:nth-child(even) {
     background: var(--color-lista-par);
     color: var(--color-lista-texto-par);
@@ -23,13 +30,6 @@ ul {
 .item:nth-child(odd) {
     background:var(--color-lista-impar);
     color: var(--color-lista-texto-impar);
-}
-.item span {
-    font-size: 18px;
-    font-weight: 500;
-}
-.lista_generica{
-    margin-left: 40px;
 }
 .lista_generica a{
     color:var(--color-lista-impar);

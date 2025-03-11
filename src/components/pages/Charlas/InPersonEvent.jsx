@@ -16,7 +16,8 @@ import fondo_derecha from "../../../assets/img/esquina_derecha.png";
 import fondo_izquierda from "../../../assets/img/cassete_izquierda.png";
 import disco_top from "../../../assets/img/disco_top.png";
 import disco_bottom from "../../../assets/img/disco_bottom.png";
-
+import datasoul_retrato from "../../../assets/img/datasoul_retrato.jpg";
+import datasoul_logo from "../../../assets/img/datasoul_logo.jpg";
 import "./events.scss";
 import "../../../css/speakers.scss";
 import "../../../css/lista.scss";
@@ -52,6 +53,7 @@ function DecoracionIzquierda(){
         width:"336px",
         height:"478px",
         zIndex: "-1",
+        filter: "opacity(30%)",
         backgroundImage: `url(${fondo_izquierda})`
     }
     return (
@@ -68,12 +70,14 @@ function InPersonEvent(){
         <DecoracionIzquierda />
         <Header logoPersonalizado={logo_evento} />
         <Menu />
-        <About />
         <Info info={{
+            logo:datasoul_logo,
+            image:datasoul_retrato,
             date: `Miércoles 12 de marzo de 2025`,
             venue: `Auditorio Ignacio Viera (Arquidiseño)`,
             time: `17:00 - 20:00`
         }} />
+        <About />
         <Register />
         <img src={disco_top} alt="Disco top" />
         <Agenda />

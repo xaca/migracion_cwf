@@ -30,3 +30,24 @@ $destacado:#F2B90F;
 .lista_generica a{
     /*color:var(--color-lista-impar);*/
 }
+.imagen_intro_evento{
+    border-radius: 10px;
+    height: 550px;
+    display: block;
+    margin: 0 auto;
+}
+.intro_evento{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+.intro_evento h2{
+    color: $texto;
+    text-align: left;
+    width: 100%;
+}
+.logo_evento{
+    width: 80%;
+    display: block;
+    margin: 30px auto;
+}

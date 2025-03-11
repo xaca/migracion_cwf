@@ -1,6 +1,29 @@
+function Intro({info}){
+  return(<>
+  <section class="intro_evento">
+    <img src={info.logo} className="logo_evento" alt="" />
+    <img src={info.image} className="imagen_intro_evento" alt="" />
+    <br />
+    <p>
+      DataSoul: ¡Hola! Somos Valen y Lau, creadoras y hosts de DataSoul Podcast, un espacio seguro para compartir experiencias trabajando en la industria tech, así como hablar de temas de los que poco se habla pero que todos enfrentamos en algún momento.
+    </p>
+    <p>
+      <h2>Episodio:</h2>
+      <p>Más allá del código: docencia y liderazgo</p>
+    </p>
+    <p>
+      En este episodio nos acompañará Cristina Gómez, DS Project Lead en Mercado Libre Colombia. Hablaremos sobre cómo las habilidades de docente pueden convertirse en una base sólida para el liderazgo de equipos. Nuestra invitada, nos contará su experiencia,  retos y aprendizajes sobre trabajar en la academia y en la industria tech.
+    </p>
+    <p> 
+      ¡No te pierdas este episodio en vivo!
+    </p>
+</section>
+  </>);
+}
 function Info({info})
 {
     return (<>
+    <Intro info={info} />
     <section id="info">
       <h1>Información sobre el evento</h1>
       <p className="fecha">
