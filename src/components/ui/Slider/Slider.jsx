@@ -31,17 +31,17 @@ function Slider({id_slider}){
                 </section>
                 </li>
                 </a> 
-                <a href="cine.html">
+                <a href="#">
                 <li className="carousel-item" id="banner_2">
                 <section className="contenedor_texto">
                     <h2>Cine Club 🍿</h2>
                     <p>
-                        Cada miércoles organizamos una salida al cine, si quieres unirte a nosotros, no dudes en contactarnos.
+                        Cada sabado organizamos una salida a cine, si quieres unirte a nosotros, no dudes en contactarnos.
                     </p>
                 </section>
                 </li>
                 </a>
-                <a href="deportes.html">
+                <a href="#">
                 <li className="carousel-item" id="banner_3">
                 <section className="contenedor_texto">
                     <h2>Deportes 🏀</h2>

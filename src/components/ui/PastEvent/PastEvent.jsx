@@ -1,6 +1,6 @@
 function PastEvent(){
     return (<>
-      <section>
+      <section id="eventos_anteriores">
       <h2>Eventos anteriores</h2>
       <ul className="lista_generica">
         <li>

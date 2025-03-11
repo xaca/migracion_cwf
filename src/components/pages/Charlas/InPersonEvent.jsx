@@ -12,7 +12,12 @@ import avatar_speaker_1 from "../../../assets/img/01_speaker.png";
 import avatar_speaker_2 from "../../../assets/img/02_speaker.png";
 import avatar_speaker_3 from "../../../assets/img/03_speaker.png";
 import avatar_speaker_4 from "../../../assets/img/04_speaker.png";
+import fondo_derecha from "../../../assets/img/esquina_derecha.png";
+import fondo_izquierda from "../../../assets/img/cassete_izquierda.png";
+import disco_top from "../../../assets/img/disco_top.png";
+import disco_bottom from "../../../assets/img/disco_bottom.png";
 
+import "./events.scss";
 import "../../../css/speakers.scss";
 import "../../../css/lista.scss";
 /*
@@ -22,8 +27,45 @@ Identificadores imagenes redes:
     2 - github
     3 - website
 */
+
+function DecoracionDerecha(){
+    const style = {
+        position:"absolute",
+        right:0,
+        top:0,
+        width:"567px",
+        height:"136px",
+        zIndex: "-1",
+        backgroundImage: `url(${fondo_derecha})`
+    }
+    return (
+        <div className="decoracion_derecha" style={style}>
+        </div>
+    );
+}
+
+function DecoracionIzquierda(){
+    const style = {
+        position:"absolute",
+        bottom: "-260%",
+        left: "-90px",
+        width:"336px",
+        height:"478px",
+        zIndex: "-1",
+        backgroundImage: `url(${fondo_izquierda})`
+    }
+    return (
+        <div className="decoracion_izquierda" style={style}>
+        </div>
+    );
+}
+
+
 function InPersonEvent(){
     return (<>
+        <section id="in_person_event">
+        <DecoracionDerecha />
+        <DecoracionIzquierda />
         <Header logoPersonalizado={logo_evento} />
         <Menu />
         <About />
@@ -33,6 +75,7 @@ function InPersonEvent(){
             time: `17:00 - 20:00`
         }} />
         <Register />
+        <img src={disco_top} alt="Disco top" />
         <Agenda />
         <section id="speakers">
         <h1>Biografías</h1>
@@ -80,8 +123,10 @@ function InPersonEvent(){
             }} />
         </section>
         </section> 
+        <img src={disco_bottom} alt="Disco bottom"  />
         <PastEvent />
-        <Footer />
+    </section>
+    <Footer />
     </>);
 }
 export default InPersonEvent;
