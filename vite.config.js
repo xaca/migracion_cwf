@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base:"/coding_with_friends",
   plugins: [react()],
   build: {
     rollupOptions: {

@@ -12,6 +12,7 @@ function Router(){
                 <Route path="cine" element={<Cine />} />
                 <Route path="charlas" element={<InPersonEvent />} />
                 <Route path="deportes" element={<Deportes />} />
+                <Route path="*" element={<Home />} />
             </Routes>
         </BrowserRouter>
     </>);
